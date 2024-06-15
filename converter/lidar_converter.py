@@ -70,7 +70,7 @@ if __name__ == '__main__':
     print(f'using {args.seed} as numpy random seed')
     np.random.seed(args.seed)
 
-    nusc_info = NuScenes(version='v1.0-trainval', dataroot=args.root_folder, verbose=True)
+    nusc_info = NuScenes(version='v1.0-mini', dataroot=args.root_folder, verbose=True)
 
     imageset = os.path.join(args.root_folder, 'nuscenes_infos_val.pkl')
     with open(imageset, 'rb') as f:
